@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Website style guide</title>    
+    <link href=Resources/styles.css type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./cc_logo.jpg.ico" type="image/x-icon">
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    
+    <!-- Top navigation-->
+    <header>
+        <nav> 
+          <ul>
+            <li><a href="#colour">Colours</a></li>
+            <li><a href="#font">Fonts</a></li>
+            <li><a href="#text">Text styles</a></li>
+            <li><a href="#btn">Button styles</a></li>
+          </ul> 
+        </nav>
+    </header>
+
+    <!-- Page title -->
+    <main>
+      <div>
+          <h1 class=title>Website Style Guide </h1>
+      </div>    
+   
+
+    <!-- MODAL SECTION-->
+    <section class="popup-example">
+      
+      <button data-modal-target="#modal" class="modal-button">Pop Up Box</button>
+      <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="modal-title">Example Modal</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sed delectus odio mollitia temporibus corporis error perspiciatis, blanditiis, quod aliquid praesentium, dignissimos iure? Nesciunt accusamus eligendi autem corrupti officiis qui quam tempore, dolorem, quibusdam accusantium distinctio fugiat eveniet ab illum labore sit odio cumque incidunt nulla ad nisi molestias? Quam, mollitia. Omnis odio debitis nostrum fuga fugiat ad cumque architecto inventore doloribus voluptate unde, dolorem incidunt maxime quas dolorum saepe eum quidem voluptas, illo amet quo voluptatum cum quaerat. Incidunt.
+        </div>
+      </div>
+    
+      <div id="overlay"></div> 
+
+    </section>
+
+
+  
+
+    <!--TO DO LIST-->
+    <section id=todolist class="todolist">
+      <h2>Stuff I need to do</h2>
+
+      <div class="all-tasks">
+        <h3 class="task-list-title">My lists</h3>
+        <ul class="task-list" data-lists>
+    
+        </ul> 
+  
+        <form action="" data-new-list-form>  <!--Links to JS-->
+          <input 
+            type="text"
+            class="new list"
+            data-new-list-input 
+            placeholder="new list name"
+            aria-label="new list name"
+          />
+          <button class="btn create" aria-label="create new list">+</button>
+        </form>
+      </div>
+  
+      <div class="todo-list" data-list-display-container>
+        <div class="todo-header">
+          <h3 class="list-title" data-list-title></h3>
+          <p class="task-count" data-list-count></p>
+      </div>
+  
+        <div class="todo-body">
+          <div class="tasks" data-tasks>
+           
+          </div>
+  
+          <div class="new-task-creator">
+              <form action="" data-new-task-form>
+                  <input 
+                    type="text"
+                    data-new-task-input
+                    class="new task"
+                    placeholder="new task name"
+                    aria-label="new task name"
+                  />
+                  <button class="btn create" aria-label="create new task">+</button>
+              </form>
+          </div>
+  
+          <div class="delete-stuff">
+            <button class="btn delete" data-clear-complete-tasks-button></button>Clear completed tasks</button>
+            <button class="btn delete" data-delete-list-button>Delete list</button>
+          </div>
+        </div>
+      </div>
+  
+     
+      </div>
+    </section>
+
+    <!-- Colour Palletes -->
+    <section id=colour class=colours> 
+        <div class=container>
+            <h2>Colours</h2>
+
+              <div class=yellow >
+                <h3>Yellow</h3>
+                <p>#FFCC33</p>
+                <p>Accents and hilights</p>
+              </div>
+              <div class=black>
+                <h3>Black</h3>
+                <p>#000000</p>
+                <p>Background and text </p>
+              </div>
+              <div class=light-grey>
+                <h3>Light grey</h3>
+                <p>#F5F5F5</p>
+                <p>Background</p>
+              </div>
+              <div class=dark-grey>
+                <h3>Dark grey</h3>
+                <p>#333333</p>
+                <p>Alternative text and accents</p>
+              </div>
+        </div>  
+    </section>
+
+    <!-- Fonts -->
+    <section id=font class=fonts>
+        <h2>Fonts</h2>
+            <div class=anton>
+              <h3>Anton</h3>
+              <p>The quick brown fox jumps over the lazy dog.</p>
+              <p id=bold>The quick brown fox jumps over the lazy dog.</p>
+              <p id=italic>The quick brown fox jumps over the lazy dog.</p>
+            </div>
+            <div class=raleway>
+              <h3>Raleway</h3>
+              <p>The quick brown fox jumps over the lazy dog.</p>
+              <p id=bold>The quick brown fox jumps over the lazy dog.</p>
+              <p id=italic>The quick brown fox jumps over the lazy dog.</p>
+            </div>
+    </section>
+
+    <!-- text styles section-->
+    <section id=text class=text-styles>
+        <h2>Text styles</h2>
+            <div class=h1>
+              <h1>H1: Main page heading</h1>
+                <ul>
+                  <li>Font Family: Anton</li>
+                  <li>Font Size: 60px</li>
+                  <li>Font Weight: Normal</li>
+                </ul> 
+            </div>
+            <div class=h2>  
+              <h2>H2: Section heading</h2>
+                <ul>
+                  <li>Font Family: Raleway</li>
+                  <li>Font Size: 40px</li>
+                  <li>Font Weight: Bold</li>
+                </ul>
+            </div>    
+            <div class=h3>      
+              <h3>H3: Subheading</h3>
+                <ul>
+                  <li>Font Family: Raleway</li>
+                  <li>Font Size: 25px</li>
+                  <li>Font Weight: Normal</li>
+                </ul>
+            </div>
+            <div class=p>    
+              <p> P: Paragraph text</p>
+                <ul>
+                  <li>Font Family: Raleway</li>
+                  <li>Font Size: 15px</li>
+                  <li>Font Weight: Normal</li>
+                </ul>
+            </div>
+    </section>
+
+    <!-- button styles -->
+    <section id=btn class=button>
+        <h2>Button style</h2>
+           <div class="btn-position">
+               <a href="#" class="btn-main">Main button</a>
+               <p> Use this button for key CTA's</p>
+           </div>
+           <div class="btn-position">
+                <a href="#" class="btn-alt">Alternative button</a>
+                <p> Use this button everywhere else</p>
+           </div>
+    </section>
+
+  </main>
+
+    <footer>
+        <div>
+            <p>&copy;Joe Durbridge 2020</p>  
+        </div>
+    </footer>
+
+
+    <template id="task-template">
+      <div class="task">
+        <input type="checkbox"/>
+        <label>
+          <span class="custom-checkbox"></span>
+        </label>
+      </div>
+    </template>
+
+  </body>
+
+</html>
